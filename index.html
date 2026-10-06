@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebGL: drawing, but invisible — 30,912 points</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">
+  <canvas id="c" aria-label="Live WebGL point cloud, 30,912 points"></canvas>
+  <div class="bar">
+    <button id="voor" aria-pressed="true">Before: the bug</button>
+    <button id="na" aria-pressed="false">After: the fix</button>
+  </div>
+  <dl>
+    <div><dt>Draw calls counted</dt><dd id="calls">…</dd></div>
+    <div><dt>Points per draw</dt><dd id="punten">…</dd></div>
+    <div><dt>Brightest centre pixel</dt><dd><span id="swatch"></span><span id="hex">…</span></dd></div>
+  </dl>
+  <p id="verdict" role="status"></p>
+  <p class="src">Full write-up with the tested snippet: <a href="https://dimensa.dev/en/threejs-scene-not-rendering" target="_blank" rel="noopener">dimensa.dev/en/threejs-scene-not-rendering</a></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
